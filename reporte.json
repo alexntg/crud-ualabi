@@ -1,0 +1,86 @@
+{
+  "SchemaVersion": 2,
+  "CreatedAt": "2024-10-15T21:30:32.4709664+02:00",
+  "ArtifactName": "https://github.com/alexntg/crud-ualabi",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  },
+  "Results": [
+    {
+      "Target": "requirements.txt",
+      "Class": "lang-pkgs",
+      "Type": "pip",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-5629",
+          "PkgName": "pymongo",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/pymongo@4.3.3",
+            "UID": "38ee7b42f6d01382"
+          },
+          "InstalledVersion": "4.3.3",
+          "FixedVersion": "4.6.3",
+          "Status": "fixed",
+          "Layer": {},
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-5629",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "python-pymongo: Out-of-bounds read in bson module",
+          "Description": "An out-of-bounds read in the 'bson' module of PyMongo 4.6.2 or earlier allows deserialization of malformed BSON provided by a Server to raise an exception which may contain arbitrary application memory.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nvd": 3,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:N/A:L",
+              "V3Score": 4.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:N/A:L",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-5629",
+            "https://gist.github.com/keltecc/62a7c2bf74a997d0a7b48a0ff3853a03",
+            "https://github.com/mongodb/mongo-python-driver",
+            "https://github.com/mongodb/mongo-python-driver/commit/56b6b6dbc267d365d97c037082369dabf37405d2",
+            "https://jira.mongodb.org/browse/PYTHON-4305",
+            "https://lists.debian.org/debian-lts-announce/2024/06/msg00007.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-5629",
+            "https://security.snyk.io/vuln/SNYK-PYTHON-PYMONGO-6370597",
+            "https://ubuntu.com/security/notices/USN-6904-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-5629"
+          ],
+          "PublishedDate": "2024-06-05T15:15:12.737Z",
+          "LastModifiedDate": "2024-06-18T18:31:05.663Z"
+        }
+      ]
+    }
+  ]
+}
